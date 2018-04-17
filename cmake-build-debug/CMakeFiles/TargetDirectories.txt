@@ -1,0 +1,3 @@
+C:/Users/Candy/projects/Triangles-cpp/cmake-build-debug/CMakeFiles/Triangles_cpp.dir
+C:/Users/Candy/projects/Triangles-cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Candy/projects/Triangles-cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
