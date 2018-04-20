@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 from math import sqrt, pow
 
 def Distance(x1, y1, x2, y2):
@@ -19,16 +20,18 @@ def BubbleSort(dist):
         dist[1] = temp
 
 def Triangles(x1, y1, x2, y2, x3, y3):
+    #Python ints are immutable, so bubble sort wouldn't work passing the ints directly
     dist = []
     dist.append(Distance(x1,y1,x2,y2))
     dist.append(Distance(x2,y2,x3,y3))
     dist.append(Distance(x1,y1,x3,y3))
 
     BubbleSort(dist)
-
+    
+    #I don't know how I feel about int casting these, but it was in the cpp source
     sum1 = int(dist[0] + dist[1])
-    sum2 = int(dist[0]**2 + dist[1]**2)
-    square = int(dist[2]**2)
+    sum2 = int(pow(dist[0],2) + pow(dist[1],2))
+    square = int(pow(dist[2],2))
     minus = int(sum2 - square)
 
     if(dist[0] == dist[1] and dist[1] == dist[2]):
